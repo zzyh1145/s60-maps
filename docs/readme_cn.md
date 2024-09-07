@@ -54,7 +54,7 @@
 ![](images/demo_video.gif "Demo") ![](images/layers.gif "Different map layers") ![](images/position_and_landmarks.png "Main view with landmarks") ![](images/menu.png "Main menu") ![](images/landmarks_list.png "List of landmarks with filter") ![](images/settings.png "Settings window")
 ## 支持的设备
 
-此软件已在如下设备进行了测试:
+已在如下设备进行了测试:
 
 - 手机:
   - `OK` [Nokia 808](https://en.wikipedia.org/wiki/Nokia_808_PureView) (感谢 [WunderWungiel](https://github.com/WunderWungiel)) 
@@ -71,50 +71,51 @@
 - 模拟器:
   - `FAILED` [EKA2L1](https://github.com/EKA2L1/EKA2L1) (here is [issue thread](https://github.com/EKA2L1/EKA2L1/issues/231))
 
-> **注意:** If you can test it works (or not) on other Series S60 devices or emulators, let me know. Also send me some screenshots in order to check a look on different sizes/orientations.
+> **注意:** 如果您可以在其他Series S60设备或模拟器上测试它是否工作（或不工作），请告诉我。同时，请发送一些截图，以便我检查不同分辨率/方向的外观
 
-## Download
+## 下载
 
-- Download and install `*.sis` or `*.sisx` (*unsigned!*) package from [release page](../../../releases/latest/).
-- If your smartphone is locked (by default):
-  - Sign package with developer certificate ([details](https://digipassion.com/signing-sissisx-files-for-symbian-s60/));
-  - Install already signed package on your smartphone.
-- If your smartphone is unlocked ('rooted') you may install provided unsigned package directly.
+- 下载并安装 `*.sis` or `*.sisx` (*未签名*) 的软件包[release page](../../../releases/latest/).
+- 如果您的手机未破解 :
+  - 开发者证书签名软件包 ([details](https://digipassion.com/signing-sissisx-files-for-symbian-s60/));
+  - 在手机上安装已签名的软件包.
+- 如果您的手机已破解,那么可以直接安装未签名的软件包
 
-## Technical details
+## 技术细节
 
-All data stored in directory `E:\Data\S60Maps\` (**note:** E drive used regardles of on which drive program installed). Map cache located in `E:\Data\S60Maps\cache\_PAlbTN\<map service>\` directory.
+所有数据储存在 `E:\Data\S60Maps\` (**注意:** 无论选择安装到哪个盘,依然会安装在 E: )。
+地图缓存位于`E:\Data\S60Maps\cache\_PAlbTN\<map service>\` 目录中。
 
-Settings store in `store.dat` file. If you have problems with application to run, try to delete this file and run again.
+设置储存在 `store.dat` 。 如果您遇到应用程序运行问题，尝试删除此文件然后重新运行。
 
-S60Maps uses phone's landmark database and all of them will be accessed within the application. New landmarks will be added to `S60Maps` category.
+S60Maps使用手机的地图数据库，并且所有地图都将被应用程序访问。新地标将被添加到`S60Maps`类别。
 
-## How to build
+## 构建
 
-Read [docs/COMPILING.md](/docs/COMPILING.md)
+阅读 [docs/COMPILING.md](/docs/COMPILING.md)
 
-## Roadmap
+## 路线地图
 
-- [x] Add support for other map layers and WMS services (like OSM bicycle, OSM humanitarian, OpenTopoMap, etc...) 
-- [ ] Add ability to define custom map layers providing tile\`s URLs
-- [x] Update old cached tiles **(done: manually for viewed area)**
-- [x] Display and edit landmarks
-- [ ] Search (using [Nominatim](https://nominatim.openstreetmap.org/))
-- [x] Show satellites info (amount, signal strength, etc...)
-- [ ] Offline maps (zipped set of PNGs)
+- [x]  添加对其他地图图层和WMS服务的支持（如OSM自行车、OSM人道主义、OpenTopoMap等...）
+- [ ]  添加自定义地图图层的功能，提供瓦片URL
+- [x] 更新旧的缓存地图 **（完成：手动更新查看过的区域）**
+- [x] 显示和编辑地标
+- [ ] 搜索 (使用 [Nominatim](https://nominatim.openstreetmap.org/))
+- [x]  显示卫星信息（数量、信号强度等...）
+- [ ] 离线地图（压缩的PNG集合）
 
-## License
+## 开源许可证
 
-This is Open Source software licensed under [GNU GPL v3.0](/LICENSE.txt)
+这是一个开源软件，遵循[GNU GPL v3.0](/LICENSE.txt)许可
 
-## Donate
+## 捐赠
 
 - PayPal: megabyte1024@yandex.com
 - ETH Ethereum / Tether USDT: 0xB14C877b2eAF7E3b4b49df25039122C0545edA74
 - Webmoney WMZ: Z598881055273
 - Sberbank card: 5469 4009 8490 5476
 
-## See also
+## 参考
 
 - [About OpenStreetMap](https://wiki.openstreetmap.org/wiki/About_OpenStreetMap)
   - [Symbian software on OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Symbian)
